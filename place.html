@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenya - Country Page</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Country Page - Kenya by Winfred Mercy Wambui">
+  <meta name="author" content="Winfred Mercy Wambui">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Kenya</h1>
+    <button id="menu" aria-label="Menu">&#9776;</button>
+    <nav id="menu-items">
+      <a href="index.html">Home</a>
+      <a href="temples.html">Temples</a>
+      <a href="place.html" class="active">Kenya</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/kenya-hero-large.webp" media="(min-width: 768px)">
+        <source srcset="images/kenya-hero-small.webp" media="(max-width: 767px)">
+        <img src="images/kenya-hero-large.webp" alt="Beautiful landscape of Kenya">
+      </picture>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+      <h2>About Kenya</h2>
+      <p>
+        Kenya is a country in East Africa with a beautiful blend of landscapes,
+        wildlife, and culture. From the Great Rift Valley to the Indian Ocean coast,
+        Kenya is famous for its safaris, game reserves, and vibrant traditions.
+      </p>
+      <p>
+        The capital city is Nairobi, a hub of culture and business, while
+        Mombasa offers rich Swahili heritage and stunning beaches.
+      </p>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Weather <span class="icon"></span></h2>
+      <p>Temperature: <span id="temp">20</span> °C</p>
+      <p>Wind Speed: <span id="wind">10</span> km/h</p>
+      <p>Wind Chill: <span id="windchill">N/A</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌍 Winfred Mercy Wambui | Kenya</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* place-large.css */
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu {
+    display: none; /* hide hamburger */
+  }
+
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .info {
+    grid-column: 1 / 2;
+  }
+
+  .weather {
+    grid-column: 2 / 3;
+  }
+
+  .weather h2::after {
+    content: " ⛅"; /* pseudo-element icon */
+  }
+}
