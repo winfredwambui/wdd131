@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenya - Country Page</title>
-  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Country Page - Kenya by Winfred Mercy Wambui">
+  <title>Kenya - Place Page</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Place Page about Kenya by Winfred Mercy Wambui">
   <meta name="author" content="Winfred Mercy Wambui">
 
   <!-- Google Fonts -->
@@ -19,45 +19,50 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to Kenya</h1>
-    <button id="menu" aria-label="Menu">&#9776;</button>
-    <nav id="menu-items">
+    <h1>Discover Kenya</h1>
+    <nav>
       <a href="index.html">Home</a>
       <a href="temples.html">Temples</a>
-      <a href="place.html" class="active">Kenya</a>
+      <a href="#">Culture</a>
+      <a href="#">Travel</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- HERO IMAGE -->
     <section class="hero">
       <picture>
-        <source srcset="images/kenya-hero-large.webp" media="(min-width: 768px)">
-        <source srcset="images/kenya-hero-small.webp" media="(max-width: 767px)">
-        <img src="images/kenya-hero-large.webp" alt="Beautiful landscape of Kenya">
+        <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+        <source srcset="images/hero-large.webp" media="(min-width: 601px)">
+        <img src="images/hero-large.webp" alt="Beautiful Kenya landscape" loading="lazy">
       </picture>
     </section>
 
-    <!-- Info Section -->
-    <section class="info">
-      <h2>About Kenya</h2>
-      <p>
-        Kenya is a country in East Africa with a beautiful blend of landscapes,
-        wildlife, and culture. From the Great Rift Valley to the Indian Ocean coast,
-        Kenya is famous for its safaris, game reserves, and vibrant traditions.
-      </p>
-      <p>
-        The capital city is Nairobi, a hub of culture and business, while
-        Mombasa offers rich Swahili heritage and stunning beaches.
-      </p>
+    <!-- HIGHLIGHTS -->
+    <section class="highlights">
+      <h2>Highlights of Kenya</h2>
+      <figure>
+        <img src="images/city.webp" alt="City view in Kenya" loading="lazy">
+        <figcaption>Modern City</figcaption>
+      </figure>
+      <figure>
+        <img src="images/culture.webp" alt="Kenyan cultural heritage" loading="lazy">
+        <figcaption>Culture</figcaption>
+      </figure>
+      <figure>
+        <img src="images/landscape.webp" alt="Scenic Kenyan landscape" loading="lazy">
+        <figcaption>Landscape</figcaption>
+      </figure>
     </section>
 
-    <!-- Weather Section -->
+    <!-- WEATHER -->
     <section class="weather">
-      <h2>Weather <span class="icon"></span></h2>
+      <h2>Weather</h2>
+      <!-- SVG icon for mobile -->
+      <img src="images/weather.svg" alt="Weather icon" class="mobile-icon">
       <p>Temperature: <span id="temp">20</span> °C</p>
       <p>Wind Speed: <span id="wind">10</span> km/h</p>
-      <p>Wind Chill: <span id="windchill">N/A</span></p>
+      <p>Wind Chill: <span id="windchill"></span></p>
     </section>
   </main>
 
