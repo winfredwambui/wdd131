@@ -1,36 +1,37 @@
-/* place-large.css */
-@media screen and (min-width: 768px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #menu {
-    display: none; /* hide hamburger */
-  }
-
+/* Larger screen overrides */
+@media (min-width: 768px) {
   nav {
-    display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
+  nav a {
+    padding: 0.75rem 1.5rem;
   }
 
-  .info {
-    grid-column: 1 / 2;
+  .highlights {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .weather {
-    grid-column: 2 / 3;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
   }
 
+  /* Pseudo-element weather icon only for larger view */
   .weather h2::after {
-    content: " ⛅"; /* pseudo-element icon */
+    content: " ⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  /* Hide mobile SVG in larger view */
+  .weather .mobile-icon {
+    display: none;
   }
 }
