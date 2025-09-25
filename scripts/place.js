@@ -1,36 +1,50 @@
-// Footer year
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
+// ============================
+// Weather & Wind Chill Section
+// ============================
 
-// Last modified date
-document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
+// Example weather data (you can replace this with live API later)
+const temperature = 22; // °C
+const windSpeed = 12; // km/h
 
-// Hamburger menu toggle
-const menuButton = document.querySelector("#menu");
-const menuItems = document.querySelector("#menu-items");
+document.addEventListener("DOMContentLoaded", () => {
+  const tempElement = document.createElement("p");
+  tempElement.textContent = `Temperature: ${temperature}°C`;
 
-menuButton.addEventListener("click", () => {
-  menuItems.classList.toggle("open");
-  menuButton.textContent = menuButton.textContent === "☰" ? "✖" : "☰";
+  const windElement = document.createElement("p");
+  windElement.textContent = `Wind Speed: ${windSpeed} km/h`;
+
+  const chillElement = document.createElement("p");
+
+  // Wind chill formula (Celsius, km/h)S
+  function calculateWindChill(t, s) {
+    if (t <= 10 && s > 4.8) {
+      return (
+        13.12 +
+        0.6215 * t -
+        11.37 * Math.pow(s, 0.16) +
+        0.3965 * t * Math.pow(s, 0.16)
+      ).toFixed(1);
+    } else {
+      return "N/A";
+    }
+  }
+
+  const windChill = calculateWindChill(temperature, windSpeed);
+  chillElement.textContent = `Wind Chill: ${windChill}`;
+
+  const weatherDiv = document.querySelector(".weather");
+  if (weatherDiv) {
+    weatherDiv.appendChild(tempElement);
+    weatherDiv.appendChild(windElement);
+    weatherDiv.appendChild(chillElement);
+  }
+
+  // ============================
+  // Footer Current Year + Name
+  // ============================
+  const footer = document.querySelector("footer p");
+  if (footer) {
+    const year = new Date().getFullYear();
+    footer.textContent = `© ${year} Winfred Wambui. All rights reserved.`;
+  }
 });
-
-// Weather data (static for now)
-const temp = parseFloat(document.querySelector("#temp").textContent);
-const wind = parseFloat(document.querySelector("#wind").textContent);
-const windchillSpan = document.querySelector("#windchill");
-
-// Wind Chill formula (Celsius)
-function calculateWindChill(tempC, windKmh) {
-  return (
-    13.12 +
-    0.6215 * tempC -
-    11.37 * Math.pow(windKmh, 0.16) +
-    0.3965 * tempC * Math.pow(windKmh, 0.16)
-  ).toFixed(1);
-}
-
-// Apply conditions
-if (temp <= 10 && wind > 4.8) {
-  windchillSpan.textContent = calculateWindChill(temp, wind) + " °C";
-} else {
-  windchillSpan.textContent = "N/A";
-}
