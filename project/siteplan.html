@@ -3,62 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Plan</title>
+  <title>Website Plan - Winfred Mercy Wambui</title>
+  <meta name="description" content="Site plan for W06 Project including purpose, scenarios, colors, typography, and wireframes.">
+  <meta name="author" content="Winfred Mercy Wambui">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="siteplan.css">
 </head>
 <body>
   <header>
-    <h1>Website Project Site Plan</h1>
-    <p>Prepared by: Winfred Wambui</p>
+    <h1>Website Planning Document</h1>
+    <p>By Winfred Mercy Wambui</p>
   </header>
 
   <main>
     <section>
       <h2>Site Name</h2>
-      <p><strong>Global Temples Explorer</strong> – This name reflects the purpose of the website: 
-         to showcase different temples around the world with history, images, and visitor information.</p>
-      <p>Optional domain: <em>globaltemples.org</em></p>
+      <p><strong>SafeNet Security Hub</strong> — This site is focused on providing cybersecurity tips, awareness, and resources. The name emphasizes safety and network protection, aligning with the project’s goal of creating awareness in cybersecurity.</p>
     </section>
 
     <section>
       <h2>Site Purpose</h2>
-      <p>The site provides historical and cultural information about significant temples worldwide. 
-         Visitors can learn about each temple’s background, see images, and find travel details.</p>
+      <p>The website aims to educate users about common cybersecurity threats and how to stay safe online. It will provide guides, tools, and updates on the latest security best practices while serving as a hub for cybersecurity awareness.</p>
     </section>
 
     <section>
       <h2>Scenarios</h2>
       <ul>
-        <li>Which temples are most popular to visit in Europe and Africa?</li>
-        <li>Where can I find visitor information and travel details for a specific temple?</li>
+        <li>How can I recognize a phishing email?</li>
+        <li>What steps should I take to protect my personal data online?</li>
       </ul>
     </section>
 
     <section>
       <h2>Color Schema</h2>
-      <p><strong>Primary Color:</strong> #2C3E50 (used for headers and navigation background)</p>
-      <p><strong>Accent Color:</strong> #E67E22 (used for highlights, buttons, and section headings)</p>
-      <p>This document also uses these colors to reflect the chosen schema.</p>
+      <p>Selected colors:</p>
+      <ul>
+        <li><strong>#1E3A8A (Navy Blue)</strong> — for headers and navigation background.</li>
+        <li><strong>#FACC15 (Amber)</strong> — for highlights, buttons, and accents.</li>
+      </ul>
     </section>
 
     <section>
       <h2>Typography</h2>
-      <p><strong>Heading Font:</strong> "Merriweather", serif – for main headings.</p>
-      <p><strong>Body Font:</strong> "Open Sans", sans-serif – for paragraphs and general text.</p>
+      <p>Selected fonts:</p>
+      <ul>
+        <li><strong>Playfair Display</strong> — for headings (h1, h2, h3).</li>
+        <li><strong>Roboto</strong> — for body text, lists, and descriptions.</li>
+      </ul>
     </section>
 
     <section>
       <h2>Wireframes</h2>
       <h3>Mobile View</h3>
-      <img src="mobile-wireframe.png" alt="Wireframe sketch for mobile homepage" width="300">
+      <img src="images/wireframe-mobile.png" alt="Wireframe sketch of the mobile homepage layout" class="wireframe">
 
       <h3>Desktop View</h3>
-      <img src="desktop-wireframe.png" alt="Wireframe sketch for desktop homepage" width="500">
+      <img src="images/wireframe-desktop.png" alt="Wireframe sketch of the desktop homepage layout" class="wireframe">
     </section>
   </main>
 
   <footer>
-    <p>Site Plan Document – W05 Project</p>
+    <p>&copy; <span id="year"></span> Winfred Mercy Wambui</p>
   </footer>
+
+  <script>
+    // auto-update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
