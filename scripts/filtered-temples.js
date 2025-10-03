@@ -67,29 +67,29 @@ const temples = [
   },
   /* --- Three additional temples (student added) --- */
   {
-    templeName: "Salt Lake Utah",
-    location: "Salt Lake City, Utah, United States",
-    dedicated: "1893, April, 6",
-    area: 382207,
+    templeName: "Oaxaca Mexico",
+    location: "Oaxaca, Mexico",
+    dedicated: "2000, March, 11",
+    area: 10700,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-utah/400x250/salt-lake-temple-lds-345022-wallpaper.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/oaxaca-mexico-temple/oaxaca-mexico-temple-41774-main.jpg"
+   },
+   {
+    templeName: "Birmingham England",
+    location: "Royal Sutton Coldfield, Birmingham",
+    dedicated: "2025, March, 22",
+    area: 10800,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/birmingham-england-temple/birmingham-england-temple-45435-main.jpg"
   },
   {
-    templeName: "Rome Italy",
-    location: "Rome, Italy",
-    dedicated: "2019, March, 10",
-    area: 41010,
+    templeName: "Dallas Texas",
+    location: "Texas, United States",
+    dedicated: "1984, October, 19-24",
+    area: 44207,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-1577455-wallpaper.jpg"
-  },
-  {
-    templeName: "Nairobi Kenya",
-    location: "Nairobi, Kenya",
-    dedicated: "2022, April, 9",
-    area: 12890,
-    imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-2.jpg"
-  }
+      "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-55240-main.jpg"
+},
 ];
 
 
