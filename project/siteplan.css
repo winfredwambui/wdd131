@@ -1,73 +1,53 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
-
+/* Typography & Colors */
 body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
-  color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
 header {
-  background-color: #2C3E50;
+  background-color: #1E3A8A;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 header h1 {
-  font-family: 'Merriweather', serif;
-  font-size: 2rem;
-  margin: 0.5rem 0;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
 }
 
-header p {
-  font-size: 1rem;
-  font-style: italic;
-}
-
-/* Sections */
-section {
-  margin: 1.5rem auto;
-  padding: 1rem;
+main {
+  padding: 2rem;
   max-width: 900px;
-  border-left: 5px solid #E67E22;
-  background-color: #fafafa;
+  margin: 0 auto;
 }
 
-section h2 {
-  font-family: 'Merriweather', serif;
-  color: #2C3E50;
-}
-
-section h3 {
-  font-family: 'Merriweather', serif;
-  color: #E67E22;
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #1E3A8A;
+  margin-top: 2rem;
 }
 
 ul {
-  list-style: disc inside;
-  margin: 0.5rem 0 0 1rem;
+  margin: 0.5rem 0 1.5rem 1.5rem;
 }
 
-/* Wireframes */
-img {
+.wireframe {
   display: block;
-  margin: 1rem auto;
-  border: 2px solid #2C3E50;
-  border-radius: 8px;
   max-width: 100%;
+  margin: 1rem auto;
+  border: 2px solid #1E3A8A;
+  border-radius: 8px;
 }
 
-/* Footer */
 footer {
+  background-color: #1E3A8A;
+  color: white;
   text-align: center;
   padding: 1rem;
-  background-color: #2C3E50;
-  color: white;
-  font-size: 0.9rem;
+  margin-top: 2rem;
 }
-
