@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
 
@@ -71,3 +72,58 @@ footer {
   font-size: 0.9rem;
 }
 
+=======
+/* Typography & Colors */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #1E3A8A;
+  margin-top: 2rem;
+}
+
+ul {
+  margin: 0.5rem 0 1.5rem 1.5rem;
+}
+
+.wireframe {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 2px solid #1E3A8A;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+>>>>>>> 7ff31c3dec56e87cc7d45154263fa34a2de87d5e
