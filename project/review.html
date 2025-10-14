@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Submitted | WDD131</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully. We appreciate your feedback!</p>
+    <p><strong>Total Reviews Submitted:</strong> <span id="reviewCount"></span></p>
+
+    <a href="form.html" class="button">Submit Another Review</a>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Winfred Wambui | WDD131 Project</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("reviewCount").textContent = localStorage.getItem("reviewCount") || 0;
+  </script>
+</body>
+</html>

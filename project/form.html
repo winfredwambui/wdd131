@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Product Review Form - WDD131 Project" />
+  <meta name="author" content="Winfred Wambui" />
+  <title>Product Review Form | WDD131</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="form.html" class="active">Review Form</a>
+      <a href="review.html">Review Summary</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="reviewForm">
+      <fieldset>
+        <legend>Product Information</legend>
+
+        <label for="productName">Product Name</label>
+        <select id="productName" name="productName" required>
+          <option value="">Select a product...</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Product Rating</legend>
+        <div class="rating">
+          <label><input type="radio" name="rating" value="1" required> ⭐</label>
+          <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+          <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+          <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+          <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Product Features</legend>
+        <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" name="features" value="Design"> Design</label>
+        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+        <label><input type="checkbox" name="features" value="Value for Money"> Value for Money</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="installationDate">Installation Date</label>
+        <input type="date" id="installationDate" name="installationDate" required />
+
+        <label for="reviewText">Your Review</label>
+        <textarea id="reviewText" name="reviewText" rows="5" placeholder="Write your review here..." required></textarea>
+      </fieldset>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Winfred Wambui | WDD131 Project</p>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+</html>
