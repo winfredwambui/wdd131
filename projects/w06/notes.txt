@@ -1,0 +1,32 @@
+SafeNet Security Hub
+====================
+
+A responsive, accessible, and dynamic cybersecurity website created as the W06 Final Project for WDD 131.
+
+Features:
+- Three pages (Home, Services, Contact)
+- Responsive layout for mobile and desktop
+- JavaScript-driven features and filtering
+- Contact form with validation and localStorage
+- Dynamic navigation and visit counter
+- Lazy loading images and optimized WebP assets
+
+Folder structure:
+wdd131/
+└── projects/
+    └── w06/
+        ├── index.html
+        ├── services.html
+        ├── contact.html
+        ├── styles.css
+        ├── scripts.js
+        ├── references.txt
+        └── images/
+            ├── hero-large.webp
+            ├── hero-small.webp
+            ├── sec-thumb-1.webp
+            ├── sec-thumb-2.webp
+            └── sec-thumb-3.webp
+
+Author: Winfred Mercy Wambui
+Year: 2025

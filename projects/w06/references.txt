@@ -1,0 +1,20 @@
+SafeNet Security Hub — References
+
+Text Content:
+All cybersecurity educational summaries were written and adapted by Winfred Mercy Wambui for WDD 131 coursework purposes (Brigham Young University - Idaho). No placeholder text used.
+
+Image Credits:
+• hero-large.webp, hero-small.webp — AI-generated digital graphics created for SafeNet Security Hub (educational use).
+• sec-thumb-1.webp — “Cybersecurity concept: padlock and circuit” — AI-generated for educational use.
+• sec-thumb-2.webp — “Strong password text with digital lock” — AI-generated for educational use.
+• sec-thumb-3.webp — “Network security visual concept” — AI-generated for educational use.
+
+All AI-generated images were created solely for educational, non-commercial purposes and are license-free for classroom submission.
+
+Tools Used:
+• Visual Studio Code for HTML/CSS/JS editing
+• GitHub Pages for deployment and hosting
+• Chrome DevTools for validation and Lighthouse testing
+
+Author:
+Winfred Mercy Wambui — 2025

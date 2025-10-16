@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services & Tutorials — SafeNet Security Hub</title>
+  <meta name="description" content="Security tutorials and services — SafeNet Security Hub" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container"><h1>SafeNet Security Hub</h1>
+      <nav id="main-nav" class="nav" aria-label="Main Navigation"></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Tutorials & Guides</h2>
+
+    <div class="controls">
+      <label for="filter">Filter:</label>
+      <select id="filter" name="filter">
+        <option value="all">All</option>
+        <option value="privacy">Privacy</option>
+        <option value="passwords">Passwords</option>
+        <option value="network">Network</option>
+      </select>
+    </div>
+
+    <section id="service-cards" class="grid">
+      <!-- JS will render cards here -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Winfred Mercy Wambui</p>
+    </div>
+  </footer>
+</body>
+</html>

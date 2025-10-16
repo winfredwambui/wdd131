@@ -1,4 +1,4 @@
-/* filtered-temples.js
+ /* filtered-temples.js
    - Contains the `temples` array (7 original + 3 added)
    - Builds cards dynamically
    - Adds filter behavior (Home, Old, New, Large, Small)
@@ -66,7 +66,7 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   /* --- Three additional temples (student added) --- */
-  {
+   {
     templeName: "Oaxaca Mexico",
     location: "Oaxaca, Mexico",
     dedicated: "2000, March, 11",

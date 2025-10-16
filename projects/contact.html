@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact & Feedback — SafeNet Security Hub</title>
+  <meta name="description" content="Contact form — SafeNet Security Hub" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container"><h1>SafeNet Security Hub</h1>
+      <nav id="main-nav" class="nav" aria-label="Main Navigation"></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact & Feedback</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text">
+
+      <label for="email">Email <span class="req">*</span></label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option value="general">General</option>
+        <option value="bug">Report a bug</option>
+        <option value="request">Resource request</option>
+      </select>
+
+      <label for="message">Message <span class="req">*</span></label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <section id="form-result" class="card" aria-live="polite" hidden></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Winfred Mercy Wambui</p>
+    </div>
+  </footer>
+</body>
+</html>
